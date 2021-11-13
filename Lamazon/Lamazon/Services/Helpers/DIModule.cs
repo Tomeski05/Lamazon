@@ -17,7 +17,7 @@ namespace Lamazon.Services.Helpers
     {
         public static IServiceCollection RegisterModule(IServiceCollection services, string connectionString)
         {
-            services.AddDbContext<LamazonDbContext>
+            services.AddDbContext<LamazonDb>
                 (options => options.UseSqlServer(connectionString));
 
             services
@@ -27,7 +27,7 @@ namespace Lamazon.Services.Helpers
                 options.Password.RequireNonAlphanumeric = false;
             })
             .AddRoleManager<RoleManager<IdentityRole>>()
-            .AddEntityFrameworkStores<LamazonDbContext>()
+            .AddEntityFrameworkStores<LamazonDb>()
             .AddDefaultTokenProviders();
 
             services.AddTransient<IUserRepository, UserRepository>();

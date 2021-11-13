@@ -2,6 +2,7 @@
 using Lamazon.Services.Interfaces;
 using Lamazon.WebModels.Enums;
 using Lamazon.WebModels.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -13,12 +14,15 @@ namespace Lamazon.Controllers
     public class OrderController : Controller
     {
         private readonly IOrderService _orderService;
+        private readonly IUserService _userService;
 
-        public OrderController(IOrderService orderservice)
+        public OrderController(IOrderService orderService, IUserService userService)
         {
-            _orderService = orderservice;
+            _orderService = orderService;
+            _userService = userService;
         }
 
+        [Authorize(Roles = "admin")]
         public IActionResult ListAllOrders()
         {
             List<OrderViewModel> orders = _orderService.GetAllOrders().ToList();
@@ -37,6 +41,65 @@ namespace Lamazon.Controllers
             OrderViewModel order = _orderService.GetOrderById(orderId);
             _orderService.ChangeStatus(order.Id, order.User.Id, StatusTypeViewModel.Declined);
             return RedirectToAction("listallorders");
+        }
+
+
+        [Authorize(Roles = "user")]
+        public IActionResult ListOrders()
+        {
+            try
+            {
+                UserViewModel user = _userService.GetCurrentUser(User.Identity.Name);
+                List<OrderViewModel> userOrders = _orderService.GetAllOrders()
+                                                                   .Where(x => x.User.Id == user.Id)
+                                                                   .ToList();
+                return View(userOrders);
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception($"Message: {ex.Message}");
+            }
+        }
+
+        [Authorize(Roles = "user")]
+        public IActionResult OrderDetails(int orderId)
+        {
+            try
+            {
+                UserViewModel user = _userService.GetCurrentUser(User.Identity.Name);
+                OrderViewModel order = _orderService.GetOrderById(orderId, user.Id);
+
+                if (order.Id > 0)
+                {
+                    return View("order", order);
+                }
+                else
+                {
+                    throw new Exception($"Invalid order");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception($"Message: {ex.Message}");
+            }
+        }
+
+        [Authorize(Roles = "user")]
+        public IActionResult ChangeStatus(int orderId, int statusId)
+        {
+            try
+            {
+                UserViewModel user = _userService.GetCurrentUser(User.Identity.Name);
+                _orderService.ChangeStatus(orderId, user.Id, (StatusTypeViewModel)statusId);
+                return RedirectToAction("ListOrders");
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception($"Message: {ex.Message}");
+            }
         }
 
     }

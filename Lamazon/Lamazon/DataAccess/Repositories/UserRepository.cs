@@ -9,7 +9,7 @@ namespace Lamazon.DataAccess.Repositories
 {
     public class UserRepository : BaseRepository, IUserRepository
     {
-        public UserRepository(LamazonDbContext context) : base(context)
+        public UserRepository(LamazonDb context) : base(context)
         {
 
         }

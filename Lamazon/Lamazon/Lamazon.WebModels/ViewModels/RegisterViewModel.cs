@@ -21,7 +21,7 @@ namespace Lamazon.WebModels.ViewModels
 
         [Required(ErrorMessage = "Please insert adress!")]
         [Display(Name = "Enter adress:")]
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
         [Required(ErrorMessage = "Please insert username!")]
         [Display(Name = "Enter username:")]

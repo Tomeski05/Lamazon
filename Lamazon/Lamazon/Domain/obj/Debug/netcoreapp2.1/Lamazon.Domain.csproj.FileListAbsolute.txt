@@ -16,4 +16,3 @@ C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Domain\obj\
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Domain\obj\Debug\netcoreapp2.1\Lamazon.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Domain\obj\Debug\netcoreapp2.1\Lamazon.Domain.dll
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Domain\obj\Debug\netcoreapp2.1\Lamazon.Domain.pdb
-C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Domain\obj\Debug\netcoreapp2.1\Lamazon.Domain.csproj.AssemblyReference.cache

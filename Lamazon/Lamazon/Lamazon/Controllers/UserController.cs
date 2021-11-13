@@ -48,5 +48,30 @@ namespace Lamazon.Controllers
             }
             return View();
         }
+
+        public IActionResult Register()
+        {
+            RegisterViewModel model = new RegisterViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Register(RegisterViewModel model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _userService.Register(model);
+                    return RedirectToAction("products", "product");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception($"Message: {ex.Message}");
+            }
+            return View(model);
+        }
     }
 }

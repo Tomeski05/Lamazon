@@ -1,8 +1,11 @@
 ﻿@model List<OrderViewModel>
+@{
+    ViewData["Title"] = "ListAllOrders";
+}
 
 <h2>All users orders</h2>
 
-<table>
+<table class="table">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -48,11 +51,11 @@
                         <a asp-action="declineorder" asp-controller="Order" asp-route-orderId="@order.Id">Decline</a>
                     </td>
                 }
-                else if(order.Status == StatusTypeViewModel.Confirmed)
+                else if (order.Status == StatusTypeViewModel.Confirmed)
                 {
                     <td>Waiting to be delivered!</td>
                 }
-                else if(order.Status == StatusTypeViewModel.Declined)
+                else if (order.Status == StatusTypeViewModel.Declined)
                 {
                     <td>You have successfully declined this order!</td>
                 }

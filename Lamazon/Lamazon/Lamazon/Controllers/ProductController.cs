@@ -1,5 +1,6 @@
 ﻿using Lamazon.Services.Interfaces;
 using Lamazon.WebModels.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Lamazon.Controllers
             _productService = productService;
         }
 
+        [Authorize(Roles = "user")]
         public IActionResult Products()
         {
             List<ProductViewModel> products = _productService.GetAllProducts().ToList();

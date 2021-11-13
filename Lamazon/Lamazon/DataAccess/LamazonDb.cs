@@ -9,9 +9,9 @@ using System.Text;
 
 namespace Lamazon.DataAccess
 {
-    public class LamazonDbContext : IdentityDbContext<User>
+    public class LamazonDb : IdentityDbContext<User>
     {
-        public LamazonDbContext(DbContextOptions options)
+        public LamazonDb(DbContextOptions options)
         : base(options) { }
 
         public DbSet<Order> Orders { get; set; }
@@ -25,7 +25,7 @@ namespace Lamazon.DataAccess
             string adminId = Guid.NewGuid().ToString();
             string roleId = Guid.NewGuid().ToString();
             string userRoleId = Guid.NewGuid().ToString();
-            string paneUserId = Guid.NewGuid().ToString();
+            string filipUserId = Guid.NewGuid().ToString();
 
             modelBuilder.Entity<IdentityRole>()
                 .HasData(
@@ -61,7 +61,7 @@ namespace Lamazon.DataAccess
                     },
                     new User
                     {
-                        Id = paneUserId,
+                        Id = filipUserId,
                         FullName = "Filip Tomeski",
                         UserName = "filip.tomeski",
                         NormalizedUserName = "FILIP.TOMESKI",
@@ -83,10 +83,10 @@ namespace Lamazon.DataAccess
                 );
 
             modelBuilder.Entity<Order>().HasData(
-                new Order { Id = 1, DateOfOrder = DateTime.UtcNow, Status = StatusType.Init, UserId = paneUserId },
-                new Order { Id = 2, DateOfOrder = DateTime.UtcNow, Status = StatusType.Pending, UserId = paneUserId }
+                new Order { Id = 1, DateOfOrder = DateTime.UtcNow, Status = StatusType.Init, UserId = filipUserId },
+                new Order { Id = 2, DateOfOrder = DateTime.UtcNow, Status = StatusType.Pending, UserId = filipUserId }
            );
-
+                
 
             modelBuilder.Entity<Product>()
                  .HasData(

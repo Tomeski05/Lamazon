@@ -65,5 +65,28 @@ namespace Lamazon.Services.Services
         {
             return _mapper.Map<OrderViewModel>(_orderRepository.GetById(id));
         }
+
+        public OrderViewModel GetOrderById(int id, string userId)
+        {
+            try
+            {
+                User user = _userRepository.GetById(userId);
+                Order order = _orderRepository.GetById(id);
+
+                if (user.Id == order.UserId)
+                {
+                    return _mapper.Map<OrderViewModel>(order);
+                }
+                else
+                {
+                    return new OrderViewModel();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception($"Message: {ex.Message}");
+            }
+        }
     }
 }

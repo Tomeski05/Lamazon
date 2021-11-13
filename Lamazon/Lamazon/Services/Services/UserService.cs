@@ -1,4 +1,5 @@
 ﻿using Lamazon.DataAccess.Interfaces;
+using Lamazon.Domain.Enums;
 using Lamazon.Domain.Models;
 using Lamazon.Services.Interfaces;
 using Lamazon.WebModels.ViewModels;
@@ -16,11 +17,11 @@ namespace Lamazon.Services.Services
         protected readonly UserManager<User> _userManager;
 
         public UserService(IUserRepository userRepository,
-                            SignInManager<User> singInManager,
+                            SignInManager<User> signInManager,
                             UserManager<User> userManager)
         {
             _userRepository = userRepository;
-            _signInManager = singInManager;
+            _signInManager = signInManager;
             _userManager = userManager;
         }
 
@@ -65,7 +66,42 @@ namespace Lamazon.Services.Services
 
         public void Register(RegisterViewModel registerModel)
         {
-            throw new NotImplementedException();
+            User user = new User
+            {
+                UserName = registerModel.Username,
+                FullName = String.Format("{0} {1}", registerModel.FirstName, registerModel.LastName),
+                Email = registerModel.Email,
+                Orders = new List<Order>()
+                {
+                    new Order
+                    {
+                        Status = StatusType.Init
+                    }
+                }
+            };
+
+            var password = registerModel.Password;
+            var result = _userManager.CreateAsync(user, password).Result;
+            bool isAdmin = false;
+
+            if (result.Succeeded)
+            {
+                var currentUser = _userManager.FindByNameAsync(user.UserName).Result;
+                var roleResult = _userManager.AddToRoleAsync(currentUser, "user").Result;
+                if (roleResult.Succeeded)
+                {
+                    LogIn(new LoginViewModel
+                    {
+                        Username = registerModel.Username,
+                        Password = registerModel.Password
+                    }, out isAdmin);
+                }
+                else
+                {
+                    throw new Exception("Adding user failed");
+                }
+            }
+
         }
     }
 }

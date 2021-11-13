@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Lamazon.DataAccess.Migrations
 {
-    public partial class initial : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -224,8 +224,8 @@ namespace Lamazon.DataAccess.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "16f102ed-76f8-4c4d-9b97-80097b5625a6", "83cd80a0-7fd8-4de2-8f6f-1308faa296d4", "admin", "ADMIN" },
-                    { "df9d343f-7f54-495b-99e2-21144e16e93f", "7f8a1812-ab18-4afd-92f4-04e141f748e9", "user", "USER" }
+                    { "b9e9d81b-570c-43b8-97b8-590c6e9828d1", "f47d06c8-4465-4f23-9468-52845046296f", "admin", "ADMIN" },
+                    { "5dbd96d6-abfd-4f95-95b7-5bbbf2bed9d6", "6bb95a30-229a-435a-a663-ad534a482d33", "user", "USER" }
                 });
 
             migrationBuilder.InsertData(
@@ -233,8 +233,8 @@ namespace Lamazon.DataAccess.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FullName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "531af434-1084-4f1b-a62a-88f4a68f4bb6", 0, "01d1f526-0e26-4d03-bfda-0a1ab905d055", "lamazon@supply.com", true, null, false, null, "lamazon@supply.com", "ADMIN", "AQAAAAEAACcQAAAAEMo5Bzo3qOgLObUp7PR/tDF32iKY4UTvHbSeOK18aaktDRcV/ndY6DmIBrNpfxso/Q==", null, false, "", false, "admin" },
-                    { "d32acd57-596a-40b3-8780-670a86d3de36", 0, "0610561a-14f6-4822-bf21-8320e4beea2f", "pane@mail.com", true, "Pane Manaskov", false, null, "PANE@MAIL.COM", "PANE.MANASKOV", "AQAAAAEAACcQAAAAEOFjm0dC6Nr2nzcMm2Ga6uqIFyVfKX5hFASOJvXMS2Be8eL4zc9rFflFOuGOqZ4JOA==", null, false, "", false, "pane.manaskov" }
+                    { "a17efdc1-1660-4bf5-be7b-2bfbd6b5fb8a", 0, "00136e7a-717b-4aa5-bea3-08e4e3d99c48", "lamazon@supply.com", true, null, false, null, "lamazon@supply.com", "ADMIN", "AQAAAAEAACcQAAAAEFHF/d+3xcwoQ99Sz2I6U+I8OqoSgnWhzHgVy6/shreq049k8lbdfXRmf+0tusUXRw==", null, false, "", false, "admin" },
+                    { "5be1e550-078b-4edc-ba76-5098fc71658b", 0, "c5efa1a3-2fc1-4ecd-9e2c-a6b82b801819", "filip@mail.com", true, "Filip Tomeski", false, null, "FILIP@MAIL.COM", "FILIP.TOMESKI", "AQAAAAEAACcQAAAAEPUCPRGFDcKwMN/0RS01r7aFiC0Nyen2RgaRiF5q2oehHGWwUmgwSHvZjhvFKVQ4Qg==", null, false, "", false, "filip.tomeski" }
                 });
 
             migrationBuilder.InsertData(
@@ -259,17 +259,17 @@ namespace Lamazon.DataAccess.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "UserId", "RoleId" },
-                values: new object[] { "531af434-1084-4f1b-a62a-88f4a68f4bb6", "16f102ed-76f8-4c4d-9b97-80097b5625a6" });
+                values: new object[] { "a17efdc1-1660-4bf5-be7b-2bfbd6b5fb8a", "b9e9d81b-570c-43b8-97b8-590c6e9828d1" });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "DateOfOrder", "IsPaid", "Status", "UserId" },
-                values: new object[] { 2, new DateTime(2021, 11, 7, 22, 20, 4, 590, DateTimeKind.Utc), false, 1, "d32acd57-596a-40b3-8780-670a86d3de36" });
+                values: new object[] { 2, new DateTime(2021, 11, 13, 18, 58, 59, 788, DateTimeKind.Utc), false, 1, "5be1e550-078b-4edc-ba76-5098fc71658b" });
 
             migrationBuilder.InsertData(
                 table: "Orders",
                 columns: new[] { "Id", "DateOfOrder", "IsPaid", "Status", "UserId" },
-                values: new object[] { 1, new DateTime(2021, 11, 7, 22, 20, 4, 590, DateTimeKind.Utc), false, 0, "d32acd57-596a-40b3-8780-670a86d3de36" });
+                values: new object[] { 1, new DateTime(2021, 11, 13, 18, 58, 59, 788, DateTimeKind.Utc), false, 0, "5be1e550-078b-4edc-ba76-5098fc71658b" });
 
             migrationBuilder.InsertData(
                 table: "ProductOrders",

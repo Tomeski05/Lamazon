@@ -87,3 +87,6 @@ C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon\bin
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon\obj\Debug\netcoreapp2.1\Razor\Views\Product\Products.cshtml.g.cs
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon\obj\Debug\netcoreapp2.1\Razor\Views\Order\ListAllOrders.cshtml.g.cs
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon\obj\Debug\netcoreapp2.1\Razor\Views\User\Login.cshtml.g.cs
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon\obj\Debug\netcoreapp2.1\Razor\Views\User\Register.cshtml.g.cs
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon\obj\Debug\netcoreapp2.1\Razor\Views\Order\ListOrders.cshtml.g.cs
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon\obj\Debug\netcoreapp2.1\Razor\Views\Order\Order.cshtml.g.cs

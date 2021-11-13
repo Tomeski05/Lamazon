@@ -9,7 +9,7 @@ namespace Lamazon.DataAccess.Repositories
 {
     public class ProductRepository : BaseRepository, IRepository<Product>
     {
-        public ProductRepository(LamazonDbContext context) : base(context) { }
+        public ProductRepository(LamazonDb context) : base(context) { }
 
         public int Delete(int id)
         {

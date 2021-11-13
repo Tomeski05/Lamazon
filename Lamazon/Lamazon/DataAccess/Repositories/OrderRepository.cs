@@ -10,7 +10,7 @@ namespace Lamazon.DataAccess.Repositories
 {
     public class OrderRepository : BaseRepository, IRepository<Order>
     {
-        public OrderRepository(LamazonDbContext context) : base(context) { }
+        public OrderRepository(LamazonDb context) : base(context) { }
 
         public int Delete(int id)
         {
@@ -21,7 +21,7 @@ namespace Lamazon.DataAccess.Repositories
                 return -1;
             }
 
-            _db.Remove(order);
+            _db.Orders.Remove(order);
             return _db.SaveChanges();
         }
 
