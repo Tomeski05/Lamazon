@@ -1,0 +1,10 @@
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\bin\Debug\netcoreapp2.1\Lamazon.WebModels.deps.json
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\bin\Debug\netcoreapp2.1\Lamazon.WebModels.dll
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\bin\Debug\netcoreapp2.1\Lamazon.WebModels.pdb
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.csproj.AssemblyReference.cache
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.AssemblyInfoInputs.cache
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.AssemblyInfo.cs
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.csproj.CoreCompileInputs.cache
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.dll
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.pdb

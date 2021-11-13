@@ -62,11 +62,11 @@ namespace Lamazon.DataAccess
                     new User
                     {
                         Id = paneUserId,
-                        FullName = "Pane Manaskov",
-                        UserName = "pane.manaskov",
-                        NormalizedUserName = "PANE.MANASKOV",
-                        Email = "pane@mail.com",
-                        NormalizedEmail = "PANE@MAIL.COM",
+                        FullName = "Filip Tomeski",
+                        UserName = "filip.tomeski",
+                        NormalizedUserName = "FILIP.TOMESKI",
+                        Email = "filip@mail.com",
+                        NormalizedEmail = "FILIP@MAIL.COM",
                         EmailConfirmed = true,
                         PasswordHash = hasher.HashPassword(null, "customer123"),
                         SecurityStamp = string.Empty

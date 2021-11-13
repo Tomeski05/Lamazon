@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj": {}
+    "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj": {
+    "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj",
         "projectName": "Lamazon.DataAccess",
-        "projectPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netcoreapp2.1": {
             "targetAlias": "netcoreapp2.1",
             "projectReferences": {
-              "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj": {
-                "projectPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj"
+              "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj": {
+                "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj"
               }
             }
           }
@@ -49,6 +49,10 @@
           "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[2.1.0, )"
             },
@@ -69,18 +73,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj": {
+    "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj",
         "projectName": "Lamazon.Domain",
-        "projectPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj",
+        "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Domain\\Lamazon.Domain.csproj",
         "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -134,18 +138,79 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj": {
+    "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon.WebModels\\Lamazon.WebModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj",
-        "projectName": "Lamazon",
-        "projectPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj",
+        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon.WebModels\\Lamazon.WebModels.csproj",
+        "projectName": "Lamazon.WebModels",
+        "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon.WebModels\\Lamazon.WebModels.csproj",
         "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Lamazon\\obj\\",
+        "outputPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon.WebModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj",
+        "projectName": "Lamazon",
+        "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon\\Lamazon.csproj",
+        "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,8 +231,8 @@
           "netcoreapp2.1": {
             "targetAlias": "netcoreapp2.1",
             "projectReferences": {
-              "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj": {
-                "projectPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj"
+              "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj": {
+                "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj"
               }
             }
           }
@@ -182,6 +247,10 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -210,18 +279,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj": {
+    "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj",
         "projectName": "Lamazon.Services",
-        "projectPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj",
+        "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Services\\Lamazon.Services.csproj",
         "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\Services\\obj\\",
+        "outputPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -242,8 +311,11 @@
           "netcoreapp2.1": {
             "targetAlias": "netcoreapp2.1",
             "projectReferences": {
-              "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Filip\\Desktop\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj"
+              "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\DataAccess\\Lamazon.DataAccess.csproj"
+              },
+              "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon.WebModels\\Lamazon.WebModels.csproj": {
+                "projectPath": "C:\\Users\\Filip\\Desktop\\Programming Course G3\\Lamazon\\Lamazon\\Lamazon\\Lamazon.WebModels\\Lamazon.WebModels.csproj"
               }
             }
           }
@@ -258,6 +330,10 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "Microsoft.AspNetCore.CookiePolicy": {
               "target": "Package",
               "version": "[2.1.0, )"
@@ -321,7 +397,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
-﻿using Lamazon.Services.Helpers;
+﻿using AutoMapper;
+using Lamazon.Services.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -35,6 +36,8 @@ namespace Lamazon
             string connectionString = Configuration.GetValue<string>("LamazonConnectionString");
             DIModule.RegisterModule(services, connectionString);
 
+            services.AddAutoMapper();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -51,9 +54,9 @@ namespace Lamazon
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {

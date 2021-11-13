@@ -1,7 +1,9 @@
 ﻿using Lamazon.DataAccess.Interfaces;
 using Lamazon.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Lamazon.DataAccess.Repositories
@@ -12,27 +14,44 @@ namespace Lamazon.DataAccess.Repositories
 
         public int Delete(int id)
         {
-            throw new NotImplementedException();
+            Order order = _db.Orders.SingleOrDefault(x => x.Id == id);
+
+            if(order == null)
+            {
+                return -1;
+            }
+
+            _db.Remove(order);
+            return _db.SaveChanges();
         }
 
         public IEnumerable<Order> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.Orders
+                .Include(x => x.ProductOrders)
+                .ThenInclude(x => x.Product)
+                .Include(x => x.User);
         }
 
         public Order GetById(int id)
         {
-            throw new NotImplementedException();
+            return _db.Orders
+                .Include(x => x.ProductOrders)
+                .ThenInclude(x => x.Product)
+                .Include(x => x.User)
+                .SingleOrDefault(x => x.Id == id);
         }
 
         public int Insert(Order entity)
         {
-            throw new NotImplementedException();
+            _db.Orders.Add(entity);
+            return _db.SaveChanges();
         }
 
         public int Update(Order entity)
         {
-            throw new NotImplementedException();
+            _db.Orders.Update(entity);
+            return _db.SaveChanges();
         }
     }
 }
