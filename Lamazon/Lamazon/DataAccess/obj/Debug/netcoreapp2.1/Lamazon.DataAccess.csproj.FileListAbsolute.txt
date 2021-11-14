@@ -23,3 +23,4 @@ C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\DataAccess\
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\DataAccess\obj\Debug\netcoreapp2.1\Lamazon.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\DataAccess\obj\Debug\netcoreapp2.1\Lamazon.DataAccess.dll
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\DataAccess\obj\Debug\netcoreapp2.1\Lamazon.DataAccess.pdb
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\DataAccess\obj\Debug\netcoreapp2.1\Lamazon.DataAccess.csproj.CopyComplete

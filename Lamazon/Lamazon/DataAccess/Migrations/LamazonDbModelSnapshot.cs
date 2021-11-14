@@ -40,8 +40,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("Orders");
 
                     b.HasData(
-                        new { Id = 1, DateOfOrder = new DateTime(2021, 11, 13, 18, 58, 59, 788, DateTimeKind.Utc), IsPaid = false, Status = 0, UserId = "5be1e550-078b-4edc-ba76-5098fc71658b" },
-                        new { Id = 2, DateOfOrder = new DateTime(2021, 11, 13, 18, 58, 59, 788, DateTimeKind.Utc), IsPaid = false, Status = 1, UserId = "5be1e550-078b-4edc-ba76-5098fc71658b" }
+                        new { Id = 1, DateOfOrder = new DateTime(2021, 11, 14, 19, 6, 13, 565, DateTimeKind.Utc), IsPaid = false, Status = 0, UserId = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3" },
+                        new { Id = 2, DateOfOrder = new DateTime(2021, 11, 14, 19, 6, 13, 565, DateTimeKind.Utc), IsPaid = false, Status = 1, UserId = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3" }
                     );
                 });
 
@@ -159,8 +159,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("AspNetUsers");
 
                     b.HasData(
-                        new { Id = "a17efdc1-1660-4bf5-be7b-2bfbd6b5fb8a", AccessFailedCount = 0, ConcurrencyStamp = "00136e7a-717b-4aa5-bea3-08e4e3d99c48", Email = "lamazon@supply.com", EmailConfirmed = true, LockoutEnabled = false, NormalizedEmail = "lamazon@supply.com", NormalizedUserName = "ADMIN", PasswordHash = "AQAAAAEAACcQAAAAEFHF/d+3xcwoQ99Sz2I6U+I8OqoSgnWhzHgVy6/shreq049k8lbdfXRmf+0tusUXRw==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "admin" },
-                        new { Id = "5be1e550-078b-4edc-ba76-5098fc71658b", AccessFailedCount = 0, ConcurrencyStamp = "c5efa1a3-2fc1-4ecd-9e2c-a6b82b801819", Email = "filip@mail.com", EmailConfirmed = true, FullName = "Filip Tomeski", LockoutEnabled = false, NormalizedEmail = "FILIP@MAIL.COM", NormalizedUserName = "FILIP.TOMESKI", PasswordHash = "AQAAAAEAACcQAAAAEPUCPRGFDcKwMN/0RS01r7aFiC0Nyen2RgaRiF5q2oehHGWwUmgwSHvZjhvFKVQ4Qg==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "filip.tomeski" }
+                        new { Id = "aa62738c-04c2-4059-9af5-c3395a583cc7", AccessFailedCount = 0, ConcurrencyStamp = "f4170030-5c3e-4258-a2bd-e5fb4dd92403", Email = "lamazon@supply.com", EmailConfirmed = true, LockoutEnabled = false, NormalizedEmail = "lamazon@supply.com", NormalizedUserName = "ADMIN", PasswordHash = "AQAAAAEAACcQAAAAEDMlM9grQxptUEB8UcLQmrhWAXGLvfQ67B2bSUed0HweunF2/gcceG0KI53kLXnZAg==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "admin" },
+                        new { Id = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3", AccessFailedCount = 0, ConcurrencyStamp = "533662a0-71f3-462d-8d78-c8988b9e4912", Email = "filip@mail.com", EmailConfirmed = true, FullName = "Filip Tomeski", LockoutEnabled = false, NormalizedEmail = "FILIP@MAIL.COM", NormalizedUserName = "FILIP.TOMESKI", PasswordHash = "AQAAAAEAACcQAAAAEEFBcSbkdOMLNW3GLjSVoVMSmMImt25mNu/b0RzniK9AwHARD97/21vZbzLBHNTJSA==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "filip.tomeski" }
                     );
                 });
 
@@ -188,8 +188,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("AspNetRoles");
 
                     b.HasData(
-                        new { Id = "b9e9d81b-570c-43b8-97b8-590c6e9828d1", ConcurrencyStamp = "f47d06c8-4465-4f23-9468-52845046296f", Name = "admin", NormalizedName = "ADMIN" },
-                        new { Id = "5dbd96d6-abfd-4f95-95b7-5bbbf2bed9d6", ConcurrencyStamp = "6bb95a30-229a-435a-a663-ad534a482d33", Name = "user", NormalizedName = "USER" }
+                        new { Id = "410a4a2c-c19e-470f-86eb-1f6da07deab7", ConcurrencyStamp = "7fc3301e-dc3b-4747-96f7-89e3fde152f5", Name = "admin", NormalizedName = "ADMIN" },
+                        new { Id = "d95a978d-2fb3-4674-9782-96328be1fe1e", ConcurrencyStamp = "7667995e-26c1-4fa8-8e79-0de15ec60c3a", Name = "user", NormalizedName = "USER" }
                     );
                 });
 
@@ -264,7 +264,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("AspNetUserRoles");
 
                     b.HasData(
-                        new { UserId = "a17efdc1-1660-4bf5-be7b-2bfbd6b5fb8a", RoleId = "b9e9d81b-570c-43b8-97b8-590c6e9828d1" }
+                        new { UserId = "aa62738c-04c2-4059-9af5-c3395a583cc7", RoleId = "410a4a2c-c19e-470f-86eb-1f6da07deab7" },
+                        new { UserId = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3", RoleId = "d95a978d-2fb3-4674-9782-96328be1fe1e" }
                     );
                 });
 

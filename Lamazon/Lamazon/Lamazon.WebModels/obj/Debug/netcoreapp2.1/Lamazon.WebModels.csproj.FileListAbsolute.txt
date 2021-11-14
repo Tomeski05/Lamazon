@@ -7,3 +7,4 @@ C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.Web
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.csproj.CoreCompileInputs.cache
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.dll
 C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.pdb
+C:\Users\Filip\Desktop\Programming Course G3\Lamazon\Lamazon\Lamazon\Lamazon.WebModels\obj\Debug\netcoreapp2.1\Lamazon.WebModels.csproj.AssemblyReference.cache

@@ -79,6 +79,11 @@ namespace Lamazon.DataAccess
                     {
                         RoleId = roleId,
                         UserId = adminId
+                    },
+                    new IdentityUserRole<string>
+                    {
+                        RoleId = userRoleId,
+                        UserId = filipUserId
                     }
                 );
 
