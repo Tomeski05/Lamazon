@@ -224,8 +224,8 @@ namespace Lamazon.DataAccess.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "410a4a2c-c19e-470f-86eb-1f6da07deab7", "7fc3301e-dc3b-4747-96f7-89e3fde152f5", "admin", "ADMIN" },
-                    { "d95a978d-2fb3-4674-9782-96328be1fe1e", "7667995e-26c1-4fa8-8e79-0de15ec60c3a", "user", "USER" }
+                    { "6e1477ce-1c82-4434-a98a-5e62358211d9", "215f3d24-935f-4972-b2b3-17aa26b3dd55", "user", "USER" },
+                    { "8c5f2be5-71b6-4ac3-84b4-de3e4f4ebcf5", "c0f40dd5-5ee5-47b6-bbc6-b3f9c3c39071", "admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -233,8 +233,8 @@ namespace Lamazon.DataAccess.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FullName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "aa62738c-04c2-4059-9af5-c3395a583cc7", 0, "f4170030-5c3e-4258-a2bd-e5fb4dd92403", "lamazon@supply.com", true, null, false, null, "lamazon@supply.com", "ADMIN", "AQAAAAEAACcQAAAAEDMlM9grQxptUEB8UcLQmrhWAXGLvfQ67B2bSUed0HweunF2/gcceG0KI53kLXnZAg==", null, false, "", false, "admin" },
-                    { "a71b6fde-b1bf-4d50-a2d2-800836eb3af3", 0, "533662a0-71f3-462d-8d78-c8988b9e4912", "filip@mail.com", true, "Filip Tomeski", false, null, "FILIP@MAIL.COM", "FILIP.TOMESKI", "AQAAAAEAACcQAAAAEEFBcSbkdOMLNW3GLjSVoVMSmMImt25mNu/b0RzniK9AwHARD97/21vZbzLBHNTJSA==", null, false, "", false, "filip.tomeski" }
+                    { "029cbbd8-9420-4d2e-9aa8-05ae9597af27", 0, "56fee32f-0a79-432c-8410-cb613a30daeb", "filip@mail.com", true, "Filip Tomeski", false, null, "FILIP@MAIL.COM", "FILIP.TOMESKI", "AQAAAAEAACcQAAAAEP9R1zEg3wn+vlSnu9qkhYcvnm8c2yESim18fP6BsL3jHbXbYy474VR6nBRJeqe+GQ==", null, false, "", false, "filip.tomeski" },
+                    { "ec212817-df63-4339-b09f-6f6ff1b59367", 0, "e82c633b-072e-4064-9ceb-2da8e8327387", "lamazon@supply.com", true, null, false, null, "lamazon@supply.com", "ADMIN", "AQAAAAEAACcQAAAAEJvEBjHbZyX2JZlpMaCL4gWtnfb+mynHr1bIXvLynjDZlTs7CYHMcSzR1XK0oKNjSQ==", null, false, "", false, "admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -242,18 +242,25 @@ namespace Lamazon.DataAccess.Migrations
                 columns: new[] { "Id", "Category", "Description", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 1, 2, "Very good phone. Bad batery", "Samsung A40", 200.0 },
-                    { 2, 2, "Large SSD of high quality", "SSD 1TB", 400.0 },
-                    { 3, 3, "C# Book for everyone", "C# in depth", 40.0 },
-                    { 4, 3, "Book for clean code", "Clean Code", 60.0 },
-                    { 5, 1, "Magical Elixir of Power", "Rakija", 20.0 },
-                    { 6, 1, "When you have too much Rakija", "Sparkling Water", 2.0 },
-                    { 7, 0, "All in one pack of appetizers", "Meze", 15.0 },
-                    { 8, 0, "Stew for good morning", "Stew in a can", 8.0 },
-                    { 9, 4, "Set of 6 glasses", "Glasses set", 10.0 },
-                    { 10, 4, "Set of 20 plastic knives and forks", "Plastic knives and forks", 4.0 },
-                    { 11, 4, "A bag of ice", "Ice", 3.0 },
-                    { 12, 4, "Plates for the whole family", "Plastic plates", 5.0 }
+                    { 19, 1, "The latest version of MVC.", "Professional ASP.NET MVC 5", 70.0 },
+                    { 18, 1, "Architecting Software.", "Software Architecture with C# 9 and .NET 5", 75.0 },
+                    { 17, 1, "For intermediate.", "Pro C# 7: With .NET", 25.0 },
+                    { 16, 1, "Getting started.", "The C# Player's Guide", 50.0 },
+                    { 15, 1, "For beginners.", "Learn C# in one day", 30.0 },
+                    { 14, 1, "Learn well.", "Head first C#", 45.0 },
+                    { 13, 1, "Great book.", "C# in depth", 80.0 },
+                    { 12, 0, "Has air pods.", "IPhone 10", 900.0 },
+                    { 10, 0, "It;s very light.", "IPhone 8", 400.0 },
+                    { 9, 0, "Bad battery.", "IPhone 7", 100.0 },
+                    { 8, 0, "Very big screen.", "Samsung Galaxy S10", 800.0 },
+                    { 7, 0, "Connecting people.", "Samsung Galaxy S9", 450.0 },
+                    { 6, 0, "Revolution.", "Samsung Galaxy S8", 400.0 },
+                    { 5, 0, "Awesome screen.", "Samsung Galaxy S7 edgde", 280.0 },
+                    { 4, 0, "Has a lot of memory.", "Samsung Galaxy S7", 200.0 },
+                    { 3, 0, "Awesome camera.", "Samsung A60", 360.0 },
+                    { 2, 0, "Very good phone.", "Samsung A50", 400.0 },
+                    { 11, 0, "Great phone.", "IPhone 9", 450.0 },
+                    { 1, 0, "Very good phone. Bad batery", "Samsung A40", 200.0 }
                 });
 
             migrationBuilder.InsertData(
@@ -261,8 +268,8 @@ namespace Lamazon.DataAccess.Migrations
                 columns: new[] { "UserId", "RoleId" },
                 values: new object[,]
                 {
-                    { "aa62738c-04c2-4059-9af5-c3395a583cc7", "410a4a2c-c19e-470f-86eb-1f6da07deab7" },
-                    { "a71b6fde-b1bf-4d50-a2d2-800836eb3af3", "d95a978d-2fb3-4674-9782-96328be1fe1e" }
+                    { "ec212817-df63-4339-b09f-6f6ff1b59367", "8c5f2be5-71b6-4ac3-84b4-de3e4f4ebcf5" },
+                    { "029cbbd8-9420-4d2e-9aa8-05ae9597af27", "6e1477ce-1c82-4434-a98a-5e62358211d9" }
                 });
 
             migrationBuilder.InsertData(
@@ -270,8 +277,8 @@ namespace Lamazon.DataAccess.Migrations
                 columns: new[] { "Id", "DateOfOrder", "IsPaid", "Status", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2021, 11, 14, 19, 6, 13, 565, DateTimeKind.Utc), false, 0, "a71b6fde-b1bf-4d50-a2d2-800836eb3af3" },
-                    { 2, new DateTime(2021, 11, 14, 19, 6, 13, 565, DateTimeKind.Utc), false, 1, "a71b6fde-b1bf-4d50-a2d2-800836eb3af3" }
+                    { 1, new DateTime(2021, 11, 17, 15, 17, 25, 687, DateTimeKind.Utc), false, 0, "029cbbd8-9420-4d2e-9aa8-05ae9597af27" },
+                    { 2, new DateTime(2021, 11, 17, 15, 17, 25, 687, DateTimeKind.Utc), false, 1, "029cbbd8-9420-4d2e-9aa8-05ae9597af27" }
                 });
 
             migrationBuilder.InsertData(

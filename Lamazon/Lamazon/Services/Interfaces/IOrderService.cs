@@ -12,5 +12,7 @@ namespace Lamazon.Services.Interfaces
         OrderViewModel GetOrderById(int id);
         int ChangeStatus(int orderId, string userId, StatusTypeViewModel status);
         OrderViewModel GetOrderById(int id, string userId);
+        OrderViewModel GetCurrentOrder(string userId);
+        int AddProduct(int orderId, int productId, string userId);
     }
 }

@@ -73,5 +73,11 @@ namespace Lamazon.Controllers
             }
             return View(model);
         }
+
+        public IActionResult LogOut()
+        {
+            _userService.Logout();
+            return RedirectToAction("index", "home");
+        }
     }
 }

@@ -40,8 +40,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("Orders");
 
                     b.HasData(
-                        new { Id = 1, DateOfOrder = new DateTime(2021, 11, 14, 19, 6, 13, 565, DateTimeKind.Utc), IsPaid = false, Status = 0, UserId = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3" },
-                        new { Id = 2, DateOfOrder = new DateTime(2021, 11, 14, 19, 6, 13, 565, DateTimeKind.Utc), IsPaid = false, Status = 1, UserId = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3" }
+                        new { Id = 1, DateOfOrder = new DateTime(2021, 11, 17, 15, 17, 25, 687, DateTimeKind.Utc), IsPaid = false, Status = 0, UserId = "029cbbd8-9420-4d2e-9aa8-05ae9597af27" },
+                        new { Id = 2, DateOfOrder = new DateTime(2021, 11, 17, 15, 17, 25, 687, DateTimeKind.Utc), IsPaid = false, Status = 1, UserId = "029cbbd8-9420-4d2e-9aa8-05ae9597af27" }
                     );
                 });
 
@@ -64,18 +64,25 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("Products");
 
                     b.HasData(
-                        new { Id = 1, Category = 2, Description = "Very good phone. Bad batery", Name = "Samsung A40", Price = 200.0 },
-                        new { Id = 2, Category = 2, Description = "Large SSD of high quality", Name = "SSD 1TB", Price = 400.0 },
-                        new { Id = 3, Category = 3, Description = "C# Book for everyone", Name = "C# in depth", Price = 40.0 },
-                        new { Id = 4, Category = 3, Description = "Book for clean code", Name = "Clean Code", Price = 60.0 },
-                        new { Id = 5, Category = 1, Description = "Magical Elixir of Power", Name = "Rakija", Price = 20.0 },
-                        new { Id = 6, Category = 1, Description = "When you have too much Rakija", Name = "Sparkling Water", Price = 2.0 },
-                        new { Id = 7, Category = 0, Description = "All in one pack of appetizers", Name = "Meze", Price = 15.0 },
-                        new { Id = 8, Category = 0, Description = "Stew for good morning", Name = "Stew in a can", Price = 8.0 },
-                        new { Id = 9, Category = 4, Description = "Set of 6 glasses", Name = "Glasses set", Price = 10.0 },
-                        new { Id = 10, Category = 4, Description = "Set of 20 plastic knives and forks", Name = "Plastic knives and forks", Price = 4.0 },
-                        new { Id = 11, Category = 4, Description = "A bag of ice", Name = "Ice", Price = 3.0 },
-                        new { Id = 12, Category = 4, Description = "Plates for the whole family", Name = "Plastic plates", Price = 5.0 }
+                        new { Id = 1, Category = 0, Description = "Very good phone. Bad batery", Name = "Samsung A40", Price = 200.0 },
+                        new { Id = 2, Category = 0, Description = "Very good phone.", Name = "Samsung A50", Price = 400.0 },
+                        new { Id = 3, Category = 0, Description = "Awesome camera.", Name = "Samsung A60", Price = 360.0 },
+                        new { Id = 4, Category = 0, Description = "Has a lot of memory.", Name = "Samsung Galaxy S7", Price = 200.0 },
+                        new { Id = 5, Category = 0, Description = "Awesome screen.", Name = "Samsung Galaxy S7 edgde", Price = 280.0 },
+                        new { Id = 6, Category = 0, Description = "Revolution.", Name = "Samsung Galaxy S8", Price = 400.0 },
+                        new { Id = 7, Category = 0, Description = "Connecting people.", Name = "Samsung Galaxy S9", Price = 450.0 },
+                        new { Id = 8, Category = 0, Description = "Very big screen.", Name = "Samsung Galaxy S10", Price = 800.0 },
+                        new { Id = 9, Category = 0, Description = "Bad battery.", Name = "IPhone 7", Price = 100.0 },
+                        new { Id = 10, Category = 0, Description = "It;s very light.", Name = "IPhone 8", Price = 400.0 },
+                        new { Id = 11, Category = 0, Description = "Great phone.", Name = "IPhone 9", Price = 450.0 },
+                        new { Id = 12, Category = 0, Description = "Has air pods.", Name = "IPhone 10", Price = 900.0 },
+                        new { Id = 13, Category = 1, Description = "Great book.", Name = "C# in depth", Price = 80.0 },
+                        new { Id = 14, Category = 1, Description = "Learn well.", Name = "Head first C#", Price = 45.0 },
+                        new { Id = 15, Category = 1, Description = "For beginners.", Name = "Learn C# in one day", Price = 30.0 },
+                        new { Id = 16, Category = 1, Description = "Getting started.", Name = "The C# Player's Guide", Price = 50.0 },
+                        new { Id = 17, Category = 1, Description = "For intermediate.", Name = "Pro C# 7: With .NET", Price = 25.0 },
+                        new { Id = 18, Category = 1, Description = "Architecting Software.", Name = "Software Architecture with C# 9 and .NET 5", Price = 75.0 },
+                        new { Id = 19, Category = 1, Description = "The latest version of MVC.", Name = "Professional ASP.NET MVC 5", Price = 70.0 }
                     );
                 });
 
@@ -159,8 +166,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("AspNetUsers");
 
                     b.HasData(
-                        new { Id = "aa62738c-04c2-4059-9af5-c3395a583cc7", AccessFailedCount = 0, ConcurrencyStamp = "f4170030-5c3e-4258-a2bd-e5fb4dd92403", Email = "lamazon@supply.com", EmailConfirmed = true, LockoutEnabled = false, NormalizedEmail = "lamazon@supply.com", NormalizedUserName = "ADMIN", PasswordHash = "AQAAAAEAACcQAAAAEDMlM9grQxptUEB8UcLQmrhWAXGLvfQ67B2bSUed0HweunF2/gcceG0KI53kLXnZAg==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "admin" },
-                        new { Id = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3", AccessFailedCount = 0, ConcurrencyStamp = "533662a0-71f3-462d-8d78-c8988b9e4912", Email = "filip@mail.com", EmailConfirmed = true, FullName = "Filip Tomeski", LockoutEnabled = false, NormalizedEmail = "FILIP@MAIL.COM", NormalizedUserName = "FILIP.TOMESKI", PasswordHash = "AQAAAAEAACcQAAAAEEFBcSbkdOMLNW3GLjSVoVMSmMImt25mNu/b0RzniK9AwHARD97/21vZbzLBHNTJSA==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "filip.tomeski" }
+                        new { Id = "ec212817-df63-4339-b09f-6f6ff1b59367", AccessFailedCount = 0, ConcurrencyStamp = "e82c633b-072e-4064-9ceb-2da8e8327387", Email = "lamazon@supply.com", EmailConfirmed = true, LockoutEnabled = false, NormalizedEmail = "lamazon@supply.com", NormalizedUserName = "ADMIN", PasswordHash = "AQAAAAEAACcQAAAAEJvEBjHbZyX2JZlpMaCL4gWtnfb+mynHr1bIXvLynjDZlTs7CYHMcSzR1XK0oKNjSQ==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "admin" },
+                        new { Id = "029cbbd8-9420-4d2e-9aa8-05ae9597af27", AccessFailedCount = 0, ConcurrencyStamp = "56fee32f-0a79-432c-8410-cb613a30daeb", Email = "filip@mail.com", EmailConfirmed = true, FullName = "Filip Tomeski", LockoutEnabled = false, NormalizedEmail = "FILIP@MAIL.COM", NormalizedUserName = "FILIP.TOMESKI", PasswordHash = "AQAAAAEAACcQAAAAEP9R1zEg3wn+vlSnu9qkhYcvnm8c2yESim18fP6BsL3jHbXbYy474VR6nBRJeqe+GQ==", PhoneNumberConfirmed = false, SecurityStamp = "", TwoFactorEnabled = false, UserName = "filip.tomeski" }
                     );
                 });
 
@@ -188,8 +195,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("AspNetRoles");
 
                     b.HasData(
-                        new { Id = "410a4a2c-c19e-470f-86eb-1f6da07deab7", ConcurrencyStamp = "7fc3301e-dc3b-4747-96f7-89e3fde152f5", Name = "admin", NormalizedName = "ADMIN" },
-                        new { Id = "d95a978d-2fb3-4674-9782-96328be1fe1e", ConcurrencyStamp = "7667995e-26c1-4fa8-8e79-0de15ec60c3a", Name = "user", NormalizedName = "USER" }
+                        new { Id = "8c5f2be5-71b6-4ac3-84b4-de3e4f4ebcf5", ConcurrencyStamp = "c0f40dd5-5ee5-47b6-bbc6-b3f9c3c39071", Name = "admin", NormalizedName = "ADMIN" },
+                        new { Id = "6e1477ce-1c82-4434-a98a-5e62358211d9", ConcurrencyStamp = "215f3d24-935f-4972-b2b3-17aa26b3dd55", Name = "user", NormalizedName = "USER" }
                     );
                 });
 
@@ -264,8 +271,8 @@ namespace Lamazon.DataAccess.Migrations
                     b.ToTable("AspNetUserRoles");
 
                     b.HasData(
-                        new { UserId = "aa62738c-04c2-4059-9af5-c3395a583cc7", RoleId = "410a4a2c-c19e-470f-86eb-1f6da07deab7" },
-                        new { UserId = "a71b6fde-b1bf-4d50-a2d2-800836eb3af3", RoleId = "d95a978d-2fb3-4674-9782-96328be1fe1e" }
+                        new { UserId = "ec212817-df63-4339-b09f-6f6ff1b59367", RoleId = "8c5f2be5-71b6-4ac3-84b4-de3e4f4ebcf5" },
+                        new { UserId = "029cbbd8-9420-4d2e-9aa8-05ae9597af27", RoleId = "6e1477ce-1c82-4434-a98a-5e62358211d9" }
                     );
                 });
 

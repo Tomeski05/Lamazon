@@ -102,5 +102,36 @@ namespace Lamazon.Controllers
             }
         }
 
+        public int AddProduct(int productId)
+        {
+            try
+            {
+                UserViewModel user = _userService.GetCurrentUser(User.Identity.Name);
+                OrderViewModel order = _orderService.GetCurrentOrder(user.Id);
+
+                int result = _orderService.AddProduct(order.Id, productId, user.Id);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Message: {ex.Message} | Exception {ex.InnerException}");
+            }
+        }
+
+        [Authorize(Roles ="user")]
+        public IActionResult Order()
+        {
+            try
+            {
+                UserViewModel user = _userService.GetCurrentUser(User.Identity.Name);
+                OrderViewModel order = _orderService.GetCurrentOrder(user.Id);
+                return View(order);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Message: {ex.Message} | Exception {ex.InnerException}");
+            }
+        }
+
     }
 }

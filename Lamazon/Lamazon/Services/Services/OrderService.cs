@@ -7,6 +7,7 @@ using Lamazon.WebModels.Enums;
 using Lamazon.WebModels.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Lamazon.Services.Services
@@ -16,12 +17,38 @@ namespace Lamazon.Services.Services
         protected readonly IRepository<Order> _orderRepository;
         protected readonly IMapper _mapper;
         protected readonly IUserRepository _userRepository;
+        protected readonly IRepository<Product> _productRepository;
 
-        public OrderService(IRepository<Order> orderRepository, IMapper mapper, IUserRepository userRepository)
+        public OrderService(IRepository<Order> orderRepository, IMapper mapper, IUserRepository userRepository, IRepository<Product> productRepository)
         {
             _orderRepository = orderRepository;
             _mapper = mapper;
             _userRepository = userRepository;
+            _productRepository = _productRepository;
+        }
+
+        public int AddProduct(int orderId, int productId, string userId)
+        {
+            try
+            {
+                Product product = _productRepository.GetById(productId);
+                Order order = _orderRepository.GetById(orderId);
+
+                User user = _userRepository.GetById(userId);
+                order.ProductOrders.Add(
+                    new ProductOrder
+                    {
+                        Product = product,
+                        Order = order,
+                    }
+                    );
+                order.User = user;
+                return _orderRepository.Update(order);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public int ChangeStatus(int orderId, string userId, StatusTypeViewModel status)
@@ -59,6 +86,22 @@ namespace Lamazon.Services.Services
             IEnumerable<Order> orders = _orderRepository.GetAll();
             List<OrderViewModel> mappedOrders = _mapper.Map<List<OrderViewModel>>(orders);
             return mappedOrders;
+        }
+
+        public OrderViewModel GetCurrentOrder(string userId)
+        {
+            try
+            {
+                Order order = _orderRepository.GetAll()
+                    .LastOrDefault(x => x.UserId == userId);
+                OrderViewModel mappedOrder = _mapper.Map<OrderViewModel>(order);
+                return mappedOrder;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
         }
 
         public OrderViewModel GetOrderById(int id)

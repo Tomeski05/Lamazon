@@ -35,3 +35,15 @@ body {
         display: none;
     }
 }
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-image {
+    width: 250px !important;
+    height: 300px !important;
+}

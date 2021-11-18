@@ -6,8 +6,6 @@ namespace Lamazon.Domain.Enums
 {
     public enum CategoryType
     {
-        Food,
-        Drinks,
         Electronics,
         Books,
         Other

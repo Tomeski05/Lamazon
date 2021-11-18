@@ -96,17 +96,25 @@ namespace Lamazon.DataAccess
             modelBuilder.Entity<Product>()
                  .HasData(
                  new Product() { Id = 1, Name = "Samsung A40", Price = 200, Description = "Very good phone. Bad batery", Category = CategoryType.Electronics },
-                 new Product() { Id = 2, Name = "SSD 1TB", Price = 400, Description = "Large SSD of high quality", Category = CategoryType.Electronics },
-                 new Product() { Id = 3, Name = "C# in depth", Price = 40, Description = "C# Book for everyone", Category = CategoryType.Books },
-                 new Product() { Id = 4, Name = "Clean Code", Price = 60, Description = "Book for clean code", Category = CategoryType.Books },
-                 new Product() { Id = 5, Name = "Rakija", Price = 20, Description = "Magical Elixir of Power", Category = CategoryType.Drinks },
-                 new Product() { Id = 6, Name = "Sparkling Water", Price = 2, Description = "When you have too much Rakija", Category = CategoryType.Drinks },
-                 new Product() { Id = 7, Name = "Meze", Price = 15, Description = "All in one pack of appetizers", Category = CategoryType.Food },
-                 new Product() { Id = 8, Name = "Stew in a can", Price = 8, Description = "Stew for good morning", Category = CategoryType.Food },
-                 new Product() { Id = 9, Name = "Glasses set", Price = 10, Description = "Set of 6 glasses", Category = CategoryType.Other },
-                 new Product() { Id = 10, Name = "Plastic knives and forks", Price = 4, Description = "Set of 20 plastic knives and forks", Category = CategoryType.Other },
-                 new Product() { Id = 11, Name = "Ice", Price = 3, Description = "A bag of ice", Category = CategoryType.Other },
-                 new Product() { Id = 12, Name = "Plastic plates", Price = 5, Description = "Plates for the whole family", Category = CategoryType.Other }
+                 new Product() { Id = 2, Name = "Samsung A50", Price = 400, Description = "Very good phone.", Category = CategoryType.Electronics },
+                 new Product() { Id = 3, Name = "Samsung A60", Price = 360, Description = "Awesome camera.", Category = CategoryType.Electronics },
+                 new Product() { Id = 4, Name = "Samsung Galaxy S7", Price = 200, Description = "Has a lot of memory.", Category = CategoryType.Electronics },
+                 new Product() { Id = 5, Name = "Samsung Galaxy S7 edgde", Price = 280, Description = "Awesome screen.", Category = CategoryType.Electronics },
+                 new Product() { Id = 6, Name = "Samsung Galaxy S8", Price = 400, Description = "Revolution.", Category = CategoryType.Electronics },
+                 new Product() { Id = 7, Name = "Samsung Galaxy S9", Price = 450, Description = "Connecting people.", Category = CategoryType.Electronics },
+                 new Product() { Id = 8, Name = "Samsung Galaxy S10", Price = 800, Description = "Very big screen.", Category = CategoryType.Electronics },
+                 new Product() { Id = 9, Name = "IPhone 7", Price = 100, Description = "Bad battery.", Category = CategoryType.Electronics },
+                 new Product() { Id = 10, Name = "IPhone 8", Price = 400, Description = "It;s very light.", Category = CategoryType.Electronics },
+                 new Product() { Id = 11, Name = "IPhone 9", Price = 450, Description = "Great phone.", Category = CategoryType.Electronics },
+                 new Product() { Id = 12, Name = "IPhone 10", Price = 900, Description = "Has air pods.", Category = CategoryType.Electronics },
+                 new Product() { Id = 13, Name = "C# in depth", Price = 80, Description = "Great book.", Category = CategoryType.Books },
+                 new Product() { Id = 14, Name = "Head first C#", Price = 45, Description = "Learn well.", Category = CategoryType.Books },
+                 new Product() { Id = 15, Name = "Learn C# in one day", Price = 30, Description = "For beginners.", Category = CategoryType.Books },
+                 new Product() { Id = 16, Name = "The C# Player's Guide", Price = 50, Description = "Getting started.", Category = CategoryType.Books },
+                 new Product() { Id = 17, Name = "Pro C# 7: With .NET", Price = 25, Description = "For intermediate.", Category = CategoryType.Books },
+                 new Product() { Id = 18, Name = "Software Architecture with C# 9 and .NET 5", Price = 75, Description = "Architecting Software.", Category = CategoryType.Books },
+                 new Product() { Id = 19, Name = "Professional ASP.NET MVC 5", Price = 70, Description = "The latest version of MVC.", Category = CategoryType.Books }
+
                  );
 
             modelBuilder.Entity<ProductOrder>().HasData(

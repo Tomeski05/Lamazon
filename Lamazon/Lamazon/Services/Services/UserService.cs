@@ -61,7 +61,7 @@ namespace Lamazon.Services.Services
 
         public void Logout()
         {
-            throw new NotImplementedException();
+            _signInManager.SignOutAsync();
         }
 
         public void Register(RegisterViewModel registerModel)
